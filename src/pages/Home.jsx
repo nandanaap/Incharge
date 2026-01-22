@@ -1,28 +1,77 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    '/image (3).png',
+    '/image (4).png', 
+    '/image (6).png'
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
   return (
     <div>
       {/* Hero Section */}
-      <section className="gradient-bg text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Take Charge of Your Mental Health
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">
-            Professional therapy services to help you overcome challenges and live your best life
-          </p>
-          <div className="space-x-4 animate-slide-up">
-            <Link to="/services" className="bg-white text-primary px-8 py-4 rounded-xl font-semibold hover:bg-accent transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Book a Session
-            </Link>
-            <Link to="/about" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary transform hover:scale-105 transition-all duration-300">
-              Learn More
-            </Link>
+      <section className="relative h-screen overflow-hidden">
+        {/* Slideshow Background */}
+        <div className="absolute inset-0">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <img
+                src={slide}
+                alt={`Hero slide ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+              {/* Blue tint overlay */}
+              <div className="absolute inset-0 bg-blue-600 opacity-60"></div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Take Charge of Your Mental Health
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">
+              Professional therapy services to help you overcome challenges and live your best life
+            </p>
+            <div className="space-x-4 animate-slide-up">
+              <Link to="/services" className="bg-white text-primary px-8 py-4 rounded-xl font-semibold hover:bg-accent transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Book a Session
+              </Link>
+              <Link to="/about" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary transform hover:scale-105 transition-all duration-300">
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+        
+        {/* Slide indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
+              }`}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Services Overview */}
@@ -33,22 +82,22 @@ const Home = () => {
             <div className="interactive-card group">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Individual Therapy</h3>
               <p className="text-gray-600 mb-4">One-on-one sessions tailored to your needs</p>
-              <Link to="/services" className="btn-primary w-full text-center block">Book Session</Link>
+             
             </div>
             <div className="interactive-card group">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Couples Therapy</h3>
               <p className="text-gray-600 mb-4">Strengthen your relationship together</p>
-              <Link to="/services" className="btn-primary w-full text-center block">Book Session</Link>
+            
             </div>
             <div className="interactive-card group">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Family Therapy</h3>
               <p className="text-gray-600 mb-4">Heal and grow as a family unit</p>
-              <Link to="/services" className="btn-primary w-full text-center block">Book Session</Link>
+              
             </div>
             <div className="interactive-card group">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">Group Therapy</h3>
               <p className="text-gray-600 mb-4">Connect with others on similar journeys</p>
-              <Link to="/services" className="btn-secondary w-full text-center block">Register</Link>
+             
             </div>
           </div>
         </div>
