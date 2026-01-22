@@ -5,7 +5,7 @@ const Courses = () => {
       title: "Anxiety Management Fundamentals",
       description: "Learn practical techniques to understand and manage anxiety in daily life.",
       duration: "4 weeks",
-      price: "$199",
+     
       level: "Beginner"
     },
     {
@@ -13,7 +13,7 @@ const Courses = () => {
       title: "Building Emotional Intelligence",
       description: "Develop your emotional awareness and interpersonal skills.",
       duration: "6 weeks",
-      price: "$299",
+    
       level: "Intermediate"
     },
     {
@@ -21,7 +21,7 @@ const Courses = () => {
       title: "Mindfulness for Mental Health",
       description: "Integrate mindfulness practices into your daily routine for better wellbeing.",
       duration: "8 weeks",
-      price: "$399",
+     
       level: "All Levels"
     }
   ];
