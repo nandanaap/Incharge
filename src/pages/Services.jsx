@@ -67,7 +67,7 @@ const Services = () => {
               <li>Intimacy and trust building</li>
               <li>Pre-marital counseling</li>
             </ul>
-            <p className="text-lg font-semibold text-primary">$150 per session</p>
+          
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -81,7 +81,7 @@ const Services = () => {
               <li>Blended family challenges</li>
               <li>Family communication</li>
             </ul>
-            <p className="text-lg font-semibold text-primary">$180 per session</p>
+            
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -95,7 +95,7 @@ const Services = () => {
               <li>Addiction recovery groups</li>
               <li>Social skills development</li>
             </ul>
-            <p className="text-lg font-semibold text-primary">$60 per session</p>
+         
           </div>
         </div>
 

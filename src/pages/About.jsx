@@ -45,7 +45,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 p-8 rounded-lg">
+        <div className="bg-gray-50 p-8 rounded-lg mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -65,6 +65,91 @@ const About = () => {
               <p className="text-gray-600">
                 We help clients develop the tools and confidence to take charge of their lives.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Meet Our Team Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+          
+          {/* Founder Card - Top */}
+          <div className="flex justify-center mb-8">
+            <div className="text-center bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm">
+              <img 
+                src="/char1.png" 
+                alt="" 
+                className="w-48 h-48 mx-auto mb-4 object-cover rounded-lg"
+              />
+              <h3 className="text-2xl font-semibold mb-2">FEEBA JOHN</h3>
+              <p className="text-blue-600 font-medium mb-2">Founder</p>
+              <p className="text-gray-600">BCPA Member
+Senior Psychologist</p>
+            </div>
+          </div>
+          
+          {/* Team Members - Bottom Row */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <img 
+                src="/char2.png" 
+                alt="Michael Chen" 
+                className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mb-2">Arzoo Bhagchandan</h3>
+              <p className="text-gray-600">Clinical Psychologist</p>
+            </div>
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <img 
+                src="/char3.png" 
+                alt="Dr. Emily Rodriguez" 
+                className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mb-2">Aishwarya Iyer</h3>
+              <p className="text-gray-600">Counseling Psychologist</p>
+            </div>
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <img 
+                src="/char4.png" 
+                alt="David Thompson" 
+                className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mb-2">Rachel Bhopale</h3>
+              <p className="text-gray-600">Community and Engagement Manager</p>
+            </div>
+            <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <img 
+                src="/char5.png" 
+                alt="David Thompson" 
+                className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mb-2">Moksha Sherwani</h3>
+              <p className="text-gray-600">Operations Manager Clinical Team</p>
+            </div>
+          </div>
+          
+          {/* Media & Creative Section */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Media & Creative</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/soham.jpg" 
+                  alt="Soham Ambe" 
+                  className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+                />
+                <h3 className="text-xl font-semibold mb-2">Soham Ambe</h3>
+                <p className="text-gray-600">Creative Director</p>
+              </div>
+              <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/akhil.jpg" 
+                  alt="Akhil Samuel" 
+                  className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
+                />
+                <h3 className="text-xl font-semibold mb-2">Akhil Samuel</h3>
+                <p className="text-gray-600">Media Lead</p>
+              </div>
             </div>
           </div>
         </div>

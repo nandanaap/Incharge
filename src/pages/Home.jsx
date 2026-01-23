@@ -51,7 +51,7 @@ const Home = () => {
             </p>
             <div className="space-x-4 animate-slide-up">
               <Link to="/services" className="bg-white text-primary px-8 py-4 rounded-xl font-semibold hover:bg-accent transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                Book a Session
+                Explore Our Services
               </Link>
               <Link to="/about" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary transform hover:scale-105 transition-all duration-300">
                 Learn More
