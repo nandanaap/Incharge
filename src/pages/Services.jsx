@@ -53,7 +53,6 @@ const Services = () => {
               <li>Stress management</li>
               <li>Personal growth and development</li>
             </ul>
-            <p className="text-lg font-semibold text-primary">$120 per session</p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -99,94 +98,57 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Booking Form */}
-        <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold mb-6 text-center">Book a Session</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full Name *
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+        {/* Book a Session Section */}
+        <div className="bg-white p-8 rounded-lg shadow-lg mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">Book a Session</h2>
+          <p className="text-center text-gray-600 mb-8">Choose your preferred therapist to schedule your session</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="bg-blue-50 p-6 rounded-lg text-center">
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">Feeba John</h3>
+              <p className="text-gray-600 mb-4">Founder & Senior Psychologist</p>
+              <a href="https://forms.gle/oPSV3EWZsqW6XdKL9" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+                Book with Feeba
+              </a>
             </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email *
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+            <div className="bg-blue-50 p-6 rounded-lg text-center">
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">Arzoo Bhagchandan</h3>
+              <p className="text-gray-600 mb-4">Clinical Psychologist</p>
+              <a href="https://forms.gle/XwmcmoeAcuAwsb498" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+                Book with Arzoo
+              </a>
             </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Phone Number *
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+            <div className="bg-blue-50 p-6 rounded-lg text-center">
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">Aishwarya Iyer</h3>
+              <p className="text-gray-600 mb-4">Counseling Psychologist</p>
+              <a href="https://forms.gle/Wd8d9yyFLX6CBm836" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+                Book with Aishwarya
+              </a>
             </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Service Type *
-              </label>
-              <select
-                name="service"
-                value={formData.service}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              >
-                <option value="">Select a service</option>
-                <option value="individual">Individual Therapy</option>
-                <option value="couples">Couples Therapy</option>
-                <option value="family">Family Therapy</option>
-                <option value="group">Group Therapy</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Message
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                placeholder="Tell us about your needs or any questions you have..."
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full btn-primary disabled:opacity-50"
-            >
-              {isSubmitting ? 'Submitting...' : 'Book Session'}
-            </button>
-          </form>
+          </div>
         </div>
+
+        {/* Community Links Section */}
+        <div className="bg-blue-50 p-8 rounded-lg">
+          <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">Join Our Community</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">Volunteer with Us</h3>
+              <p className="text-gray-600 mb-4">Make a difference in others' lives by joining our volunteer program</p>
+              <a href="https://forms.gle/LKSGuRfERib549fH9" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+                Apply to Volunteer
+              </a>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <h3 className="text-xl font-semibold mb-4 text-blue-700">Greatness Community</h3>
+              <p className="text-gray-600 mb-4">Connect with like-minded individuals in our supportive community</p>
+              <a href="https://forms.gle/wZz9a9n9Fv9JwMBM6" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+                Join Community
+              </a>
+            </div>
+          </div>
+        </div>
+
+      
       </div>
     </div>
   );
