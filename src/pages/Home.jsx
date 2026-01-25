@@ -156,12 +156,35 @@ const Home = () => {
 
       {/* Brand Video */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-8" style={{color: '#1E90FF'}}>Our Story</h2>
-          <div className="aspect-video rounded-lg flex items-center justify-center transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl hover:transform hover:scale-105" style={{backgroundColor: '#1E90FF'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#1E90FF'}>
-            <div className="text-center text-white">
-              <div className="text-6xl mb-4">▶</div>
-              <p className="text-xl font-semibold">Watch Our Brand Video</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '700px'}}>
+              <video 
+                className="w-full h-full object-cover cursor-pointer"
+                controls
+              >
+                <source src="/Left.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '700px'}}>
+              <video 
+                className="w-full h-full object-cover cursor-pointer"
+                controls
+              >
+                <source src="/Middle.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '700px'}}>
+              <video 
+                className="w-full h-full object-cover cursor-pointer"
+                controls
+              >
+                <source src="/Right.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
