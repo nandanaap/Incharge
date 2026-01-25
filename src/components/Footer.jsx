@@ -7,15 +7,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-secondary">Incharge</h3>
+             <Link to="/" className="flex items-center">
+                <div className="flex space-x-4"></div>
+              <img src="/IN-Charge-LOGO.png" alt="InCharge Logo" className="h-12 w-auto hover:scale-105 transition-transform duration-300" />
+            </Link>
+            
             <p className="text-gray-300 mb-4">
               Professional mental health and therapy services to help you live your best life.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-secondary transform hover:scale-110 transition-all duration-300">Facebook</a>
-              <a href="#" className="text-gray-300 hover:text-secondary transform hover:scale-110 transition-all duration-300">Instagram</a>
-              <a href="#" className="text-gray-300 hover:text-secondary transform hover:scale-110 transition-all duration-300">LinkedIn</a>
-            </div>
+            
           </div>
           
           <div>

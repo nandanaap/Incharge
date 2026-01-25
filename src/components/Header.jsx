@@ -6,15 +6,12 @@ const Header = () => {
   const mobileNavLinkClass = "block px-3 py-2 text-white font-bold hover:text-gray-200 hover:bg-blue-500 rounded transition-all duration-300";
 
   return (
-    <header className="bg-blue-600 shadow-xl sticky top-0 z-50">
+    <header className="shadow-xl sticky top-0 z-50" style={{backgroundColor: '#1E90FF'}}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-
-              <img src="/IN-Charge-LOGO.png" className="h-10 w-auto hover:scale-105 transition-transform duration-300" />
-
-              
+              <img src="/IN-Charge-LOGO.png" alt="InCharge Logo" className="h-12 w-auto hover:scale-105 transition-transform duration-300" />
             </Link>
           </div>
           
@@ -30,7 +27,8 @@ const Header = () => {
             </a>
             <button 
               onClick={() => window.location.href = 'mailto:work@inchargewellness.com'} 
-              className="bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-slow cursor-pointer"
+              className="text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-slow cursor-pointer"
+              style={{backgroundColor: '#6495ED'}}
             >
               Get in Touch
             </button>

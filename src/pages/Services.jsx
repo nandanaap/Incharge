@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../config/firebase';
@@ -36,98 +37,122 @@ const Services = () => {
   };
 
   return (
-    <div className="py-16">
+    <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12">Our Services</h1>
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-bold mb-6" style={{color: '#1E90FF'}}>Our Services</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional mental health services tailored to your unique needs. Take the first step towards better mental wellness.</p>
+        </div>
         
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Individual Therapy</h2>
-            <p className="text-gray-600 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#1E90FF'}}>
+                <span className="text-white text-xl font-bold">1</span>
+              </div>
+              <h2 className="text-2xl font-bold" style={{color: '#1E90FF'}}>Individual Therapy</h2>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Personalized one-on-one sessions to address your specific mental health needs and goals.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6">
-              <li>Depression and anxiety treatment</li>
-              <li>Trauma and PTSD therapy</li>
-              <li>Stress management</li>
-              <li>Personal growth and development</li>
+            <ul className="space-y-2 text-gray-600 mb-6">
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Depression and anxiety treatment</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Trauma and PTSD therapy</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Stress management</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Personal growth and development</li>
             </ul>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Couples Therapy</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#1E90FF'}}>
+                <span className="text-white text-xl font-bold">2</span>
+              </div>
+              <h2 className="text-2xl font-bold" style={{color: '#1E90FF'}}>Couples Therapy</h2>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Strengthen your relationship and improve communication with your partner.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6">
-              <li>Communication improvement</li>
-              <li>Conflict resolution</li>
-              <li>Intimacy and trust building</li>
-              <li>Pre-marital counseling</li>
+            <ul className="space-y-2 text-gray-600 mb-6">
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Communication improvement</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Conflict resolution</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Intimacy and trust building</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Pre-marital counseling</li>
             </ul>
-          
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Family Therapy</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#1E90FF'}}>
+                <span className="text-white text-xl font-bold">3</span>
+              </div>
+              <h2 className="text-2xl font-bold" style={{color: '#1E90FF'}}>Family Therapy</h2>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Heal family dynamics and create a healthier home environment for everyone.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6">
-              <li>Parent-child relationships</li>
-              <li>Sibling conflicts</li>
-              <li>Blended family challenges</li>
-              <li>Family communication</li>
+            <ul className="space-y-2 text-gray-600 mb-6">
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Parent-child relationships</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Sibling conflicts</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Blended family challenges</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Family communication</li>
             </ul>
-            
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Group Therapy</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#1E90FF'}}>
+                <span className="text-white text-xl font-bold">4</span>
+              </div>
+              <h2 className="text-2xl font-bold" style={{color: '#1E90FF'}}>Group Therapy</h2>
+            </div>
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Connect with others facing similar challenges in a supportive group setting.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6">
-              <li>Anxiety support groups</li>
-              <li>Grief and loss groups</li>
-              <li>Addiction recovery groups</li>
-              <li>Social skills development</li>
+            <ul className="space-y-2 text-gray-600 mb-6">
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Anxiety support groups</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Grief and loss groups</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Addiction recovery groups</li>
+              <li className="flex items-center"><span className="w-2 h-2 rounded-full mr-3" style={{backgroundColor: '#6495ED'}}></span>Social skills development</li>
             </ul>
-         
           </div>
         </div>
 
         {/* Book a Session Section */}
-        <div className="bg-white p-8 rounded-lg shadow-lg mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">Book a Session</h2>
-          <p className="text-center text-gray-600 mb-8">Choose your preferred therapist to schedule your session</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-blue-50 p-6 rounded-lg text-center">
-              <h3 className="text-xl font-semibold mb-4 text-blue-700">Feeba John</h3>
-              <p className="text-gray-600 mb-4">Founder & Senior Psychologist</p>
-              <a href="https://forms.gle/oPSV3EWZsqW6XdKL9" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+        <div className="p-10 rounded-2xl shadow-xl mb-20" style={{backgroundColor: '#6495ED'}}>
+          <h2 className="text-4xl font-bold text-center mb-4 text-white">Book a Session</h2>
+          <p className="text-center text-white mb-12 text-lg">Choose your preferred therapist to schedule your session</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#1E90FF'}}>FJ</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#1E90FF'}}>Feeba John</h3>
+              <p className="text-gray-600 mb-6">Founder & Senior Psychologist</p>
+              <a href="https://forms.gle/oPSV3EWZsqW6XdKL9" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#1E90FF'}}>
                 Book with Feeba
               </a>
             </div>
-            <div className="bg-blue-50 p-6 rounded-lg text-center">
-              <h3 className="text-xl font-semibold mb-4 text-blue-700">Arzoo Bhagchandan</h3>
-              <p className="text-gray-600 mb-4">Clinical Psychologist</p>
-              <a href="https://forms.gle/XwmcmoeAcuAwsb498" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+            <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#1E90FF'}}>AB</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#1E90FF'}}>Arzoo Bhagchandan</h3>
+              <p className="text-gray-600 mb-6">Clinical Psychologist</p>
+              <a href="https://forms.gle/XwmcmoeAcuAwsb498" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#1E90FF'}}>
                 Book with Arzoo
               </a>
             </div>
-            <div className="bg-blue-50 p-6 rounded-lg text-center">
-              <h3 className="text-xl font-semibold mb-4 text-blue-700">Aishwarya Iyer</h3>
-              <p className="text-gray-600 mb-4">Counseling Psychologist</p>
-              <a href="https://forms.gle/Wd8d9yyFLX6CBm836" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 inline-block">
+            <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#1E90FF'}}>AI</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#1E90FF'}}>Aishwarya Iyer</h3>
+              <p className="text-gray-600 mb-6">Counseling Psychologist</p>
+              <a href="https://forms.gle/Wd8d9yyFLX6CBm836" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#1E90FF'}}>
                 Book with Aishwarya
               </a>
             </div>
           </div>
         </div>
 
-        {/* Community Links Section */}
+       {/* Community Links Section */}
         <div className="bg-blue-50 p-8 rounded-lg">
           <h2 className="text-3xl font-bold text-center mb-8 text-blue-800">Join Our Community</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -147,11 +172,13 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-      
       </div>
     </div>
   );
 };
 
 export default Services;
+
+        
+
+  

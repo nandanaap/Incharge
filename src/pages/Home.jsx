@@ -195,38 +195,38 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-12" style={{color: '#1E90FF'}}>What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-xl">⭐️</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">"I highly recommend Dr.Feeba. She is one of the strong minded people I have ever known. Her positive outlook towards life and ability to guide you through difficult situations making you understand your own self in a way is spectacular."</p>
-              <div className="border-t pt-4" style={{borderColor: '#6495ED'}}>
+              <p className="text-gray-700 mb-4 italic leading-relaxed flex-grow">"I highly recommend Dr.Feeba. She is one of the strong minded people I have ever known. Her positive outlook towards life and ability to guide you through difficult situations making you understand your own self in a way is spectacular."</p>
+              <div className="border-t pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
                 <p className="font-semibold" style={{color: '#1E90FF'}}>Aditi Mane</p>
                 <p className="text-gray-500 text-sm">· a year ago</p>
               </div>
             </div>
-            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-xl">⭐️</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">"I highly recommend Dr. Freeba John. She was like magic, flipping the coin and changing my pain to power. Just like that. I am grateful to find her."</p>
-              <div className="border-t pt-4" style={{borderColor: '#6495ED'}}>
+              <p className="text-gray-700 mb-4 italic leading-relaxed flex-grow">"I highly recommend Dr. Freeba John. She was like magic, flipping the coin and changing my pain to power. Just like that. I am grateful to find her."</p>
+              <div className="border-t pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
                 <p className="font-semibold" style={{color: '#1E90FF'}}>Saolee</p>
                 <p className="text-gray-500 text-sm">· a year ago</p>
               </div>
             </div>
-            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
+            <div className="p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <span key={i} className="text-yellow-400 text-xl">⭐️</span>
                 ))}
               </div>
-              <p className="text-gray-700 mb-4 italic leading-relaxed">"It's an experience I can't recommend highly enough. From personal issues to future aspirations, relationships, and maintaining focus amidst external distractions, she provided invaluable support and insight every step of the way."</p>
-              <div className="border-t pt-4" style={{borderColor: '#6495ED'}}>
+              <p className="text-gray-700 mb-4 italic leading-relaxed flex-grow">"It's an experience I can't recommend highly enough. From personal issues to future aspirations, relationships, and maintaining focus amidst external distractions, she provided invaluable support and insight every step of the way."</p>
+              <div className="border-t pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
                 <p className="font-semibold" style={{color: '#1E90FF'}}>Kaushalendra Sharma</p>
                 <p className="text-gray-500 text-sm">· a year ago</p>
               </div>
