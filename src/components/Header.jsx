@@ -6,7 +6,7 @@ const Header = () => {
   const mobileNavLinkClass = "block px-3 py-2 text-white font-bold hover:text-gray-200 hover:bg-blue-500 rounded transition-all duration-300";
 
   return (
-    <header className="shadow-xl sticky top-0 z-50" style={{backgroundColor: '#1E90FF'}}>
+    <header className="shadow-xl sticky top-0 z-50" style={{backgroundColor: '#2E5D8A'}}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
