@@ -26,7 +26,7 @@ const Header = () => {
               </svg>
             </a>
             <button 
-              onClick={() => window.location.href = 'mailto:work@inchargewellness.com'} 
+              onClick={() => window.location.href = 'mailto:work@inchargewellness.com?subject=Inquiry%20from%20Website&body=I%20am%20interested%20in%20your%20services.'}
               className="text-white px-6 py-3 rounded-lg hover:bg-opacity-80 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-pulse-slow cursor-pointer"
               style={{backgroundColor: '#6495ED'}}
             >
