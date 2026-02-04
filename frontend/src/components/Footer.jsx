@@ -21,7 +21,7 @@ const Footer = () => {
             
           </div>
           
-          <div>
+          <div className="text-right">
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
               <li><Link to="/services" className="text-gray-300 hover:text-white">Individual Therapy</Link></li>
@@ -31,15 +31,16 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/*<div>
+          <div className="text-right">
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-             
               <li><Link to="/podcast" className="text-gray-300 hover:text-white">Podcast</Link></li>
               <li><Link to="/courses" className="text-gray-300 hover:text-white">Courses</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
             </ul>
-          </div>*/}
+          </div>
+          
+        
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
