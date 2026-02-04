@@ -35,7 +35,7 @@ const Home = () => {
                 className="w-full h-full object-cover"
               />
               {/* Blue tint overlay */}
-              <div className="absolute inset-0" style={{backgroundColor: '#2E5D8A', opacity: 0.7}}></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/80"></div>
             </div>
           ))}
         </div>
@@ -50,10 +50,10 @@ const Home = () => {
               Professional therapy services to help you overcome challenges and live your best life
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:space-x-4 animate-slide-up items-center justify-center">
-              <Link to="/services" className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-center" style={{color: '#2E5D8A'}}>
+              <Link to="/services" className="bg-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-center" style={{color: '#3258b2'}}>
                 Explore Our Services
               </Link>
-              <Link to="/about" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white transform hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center" style={{'--hover-color': '#2E5D8A'}} onMouseOver={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#2E5D8A';}} onMouseOut={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
+              <Link to="/about" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-white transform hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center" style={{'--hover-color': '#3258b2'}} onMouseOver={(e) => {e.target.style.backgroundColor = 'white'; e.target.style.color = '#3258b2';}} onMouseOut={(e) => {e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white';}}>
                 Learn More
               </Link>
             </div>
@@ -77,22 +77,22 @@ const Home = () => {
       {/* Services Overview */}
       <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" style={{color: '#2E5D8A'}}>Our Services</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" style={{color: '#3258b2'}}>Our Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <div className="p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#2E5D8A'}}>Individual Therapy</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Individual Therapy</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">One-on-one sessions tailored to your needs</p>
             </div>
             <div className="p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#2E5D8A'}}>Couples Therapy</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Couples Therapy</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Strengthen your relationship together</p>
             </div>
             <div className="p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#2E5D8A'}}>Family Therapy</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Family Therapy</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Heal and grow as a family unit</p>
             </div>
             <div className="p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#2E5D8A'}}>Group Therapy</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Group Therapy</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Connect with others on similar journeys</p>
             </div>
           </div>
@@ -106,8 +106,8 @@ const Home = () => {
           {/* Company Logos Section */}
           <div className="mt-8 sm:mt-12 lg:mt-20">
             <div className="text-center mb-8 sm:mb-12">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4" style={{color: '#2E5D8A'}}>Organisation Impacted</h3>
-              <div className="w-16 sm:w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#2E5D8A'}}></div>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4" style={{color: '#3258b2'}}>Organisation Impacted</h3>
+              <div className="w-16 sm:w-24 h-1 mx-auto rounded-full" style={{backgroundColor: '#3258b2'}}></div>
             </div>
             <div className="bg-white p-4 sm:p-6 lg:p-10 rounded-2xl shadow-xl">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
@@ -142,7 +142,7 @@ const Home = () => {
       {/* Brand Video */}
       <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#2E5D8A'}}>Our Story</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#3258b2'}}>Our Story</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '300px'}}>
               <video 
@@ -184,29 +184,29 @@ const Home = () => {
           <div className="mt-8 sm:mt-12 lg:mt-20">  
             {/* Partnership Section - Top */}
             <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#0f1a2b'}}>Partnership with Us</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#3258b2'}}>Partnership with Us</h2>
               <div className="max-w-sm sm:max-w-md mx-auto">
                 <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#0f1a2b'}}>Partnerships</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Partnerships</h3>
                   <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Collaborate with us</p>
-                  <button className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 w-full sm:w-auto" style={{backgroundColor: '#0f1a2b'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#0f1a2b'}>Partner With Us</button>
+                  <button className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 w-full sm:w-auto" style={{backgroundColor: '#3258b2'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#3258b2'}>Partner With Us</button>
                 </div>
               </div>
             </div>
             
             {/* Community & Volunteer Section - Bottom */}
             <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12" style={{color: '#0f1a2b'}}>Join Our Community</h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12" style={{color: '#3258b2'}}>Join Our Community</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
                 <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#0f1a2b'}}>Greatness Community</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Greatness Community</h3>
                   <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Connect with like-minded individuals</p>
-                  <a href="https://forms.gle/wZz9a9n9Fv9JwMBM6" target="_blank" rel="noopener noreferrer" className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 inline-block w-full sm:w-auto" style={{backgroundColor: '#0f1a2b'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#0f1a2b'}>Become a Member</a>
+                  <a href="https://forms.gle/wZz9a9n9Fv9JwMBM6" target="_blank" rel="noopener noreferrer" className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 inline-block w-full sm:w-auto" style={{backgroundColor: '#3258b2'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#3258b2'}>Become a Member</a>
                 </div>
                 <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#0f1a2b'}}>Volunteer</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Volunteer</h3>
                   <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Make a difference in others' lives</p>
-                  <a href="https://forms.gle/LKSGuRfERib549fH9" target="_blank" rel="noopener noreferrer" className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 inline-block w-full sm:w-auto" style={{backgroundColor: '#0f1a2b'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#0f1a2b'}>Join Us</a>
+                  <a href="https://forms.gle/LKSGuRfERib549fH9" target="_blank" rel="noopener noreferrer" className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 inline-block w-full sm:w-auto" style={{backgroundColor: '#3258b2'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#3258b2'}>Join Us</a>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@ const Home = () => {
       {/* Google Reviews */}
       <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" style={{color: '#2E5D8A'}}>What Our Clients Say</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" style={{color: '#3258b2'}}>What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             <div className="p-4 sm:p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[250px] sm:min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
               <div className="flex mb-4">

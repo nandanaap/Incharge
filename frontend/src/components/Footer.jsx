@@ -9,10 +9,13 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
              <Link to="/" className="flex items-center">
                 <div className="flex space-x-4"></div>
-              <img src="/IN-Charge-LOGO.png" alt="InCharge Logo" className="h-12 w-auto hover:scale-105 transition-transform duration-300" />
+              <img src="/IN-Charge-LOGO.png" alt="InCharge Logo" className="h-8 w-auto hover:scale-105 transition-transform duration-300" />
             </Link>
+            <p className="text-sm font italic text-gray-200 mt-2 mb-4">
+              Building Resilient minds
+            </p>
             
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300">
               Professional mental health and therapy services to help you live your best life.
             </p>
             

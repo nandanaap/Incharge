@@ -40,18 +40,18 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6" style={{color: '#2E5D8A'}}>Our Services</h1>
+          <h1 className="text-5xl font-bold mb-6" style={{color: '#3258b2'}}>Our Services</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">Professional mental health services tailored to your unique needs. Take the first step towards better mental wellness.</p>
         </div>
         
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#2E5D8A'}}>
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#3258b2'}}>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#2E5D8A'}}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#3258b2'}}>
                 <span className="text-white text-xl font-bold">1</span>
               </div>
-              <h2 className="text-2xl font-bold" style={{color: '#2E5D8A'}}>Individual Therapy</h2>
+              <h2 className="text-2xl font-bold" style={{color: '#3258b2'}}>Individual Therapy</h2>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Personalized one-on-one sessions to address your specific mental health needs and goals.
@@ -64,12 +64,12 @@ const Services = () => {
             </ul>
           </div>
 
-          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#2E5D8A'}}>
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#3258b2'}}>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#2E5D8A'}}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#3258b2'}}>
                 <span className="text-white text-xl font-bold">2</span>
               </div>
-              <h2 className="text-2xl font-bold" style={{color: '#2E5D8A'}}>Couples Therapy</h2>
+              <h2 className="text-2xl font-bold" style={{color: '#3258b2'}}>Couples Therapy</h2>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Strengthen your relationship and improve communication with your partner.
@@ -82,12 +82,12 @@ const Services = () => {
             </ul>
           </div>
 
-          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#2E5D8A'}}>
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#3258b2'}}>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#2E5D8A'}}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#3258b2'}}>
                 <span className="text-white text-xl font-bold">3</span>
               </div>
-              <h2 className="text-2xl font-bold" style={{color: '#2E5D8A'}}>Family Therapy</h2>
+              <h2 className="text-2xl font-bold" style={{color: '#3258b2'}}>Family Therapy</h2>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Heal family dynamics and create a healthier home environment for everyone.
@@ -100,12 +100,12 @@ const Services = () => {
             </ul>
           </div>
 
-          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#2E5D8A'}}>
+          <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#3258b2'}}>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#2E5D8A'}}>
+              <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{backgroundColor: '#3258b2'}}>
                 <span className="text-white text-xl font-bold">4</span>
               </div>
-              <h2 className="text-2xl font-bold" style={{color: '#2E5D8A'}}>Group Therapy</h2>
+              <h2 className="text-2xl font-bold" style={{color: '#3258b2'}}>Group Therapy</h2>
             </div>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Connect with others facing similar challenges in a supportive group setting.
@@ -125,26 +125,26 @@ const Services = () => {
           <p className="text-center text-white mb-12 text-lg">Choose your preferred therapist to schedule your session</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
-              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#2E5D8A'}}>FJ</div>
-              <h3 className="text-2xl font-semibold mb-2" style={{color: '#2E5D8A'}}>Feeba John</h3>
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#3258b2'}}>FJ</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#3258b2'}}>Feeba John</h3>
               <p className="text-gray-600 mb-6">Founder & Senior Psychologist</p>
-              <a href="https://forms.gle/oPSV3EWZsqW6XdKL9" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#2E5D8A'}}>
+              <a href="https://forms.gle/oPSV3EWZsqW6XdKL9" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#3258b2'}}>
                 Book with Feeba
               </a>
             </div>
             <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
-              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#2E5D8A'}}>AB</div>
-              <h3 className="text-2xl font-semibold mb-2" style={{color: '#2E5D8A'}}>Arzoo Bhagchandan</h3>
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#3258b2'}}>AB</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#3258b2'}}>Arzoo Bhagchandan</h3>
               <p className="text-gray-600 mb-6">Clinical Psychologist</p>
-              <a href="https://forms.gle/XwmcmoeAcuAwsb498" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#2E5D8A'}}>
+              <a href="https://forms.gle/XwmcmoeAcuAwsb498" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#3258b2'}}>
                 Book with Arzoo
               </a>
             </div>
             <div className="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
-              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#2E5D8A'}}>AI</div>
-              <h3 className="text-2xl font-semibold mb-2" style={{color: '#2E5D8A'}}>Aishwarya Iyer</h3>
+              <div className="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold" style={{backgroundColor: '#3258b2'}}>AI</div>
+              <h3 className="text-2xl font-semibold mb-2" style={{color: '#3258b2'}}>Aishwarya Iyer</h3>
               <p className="text-gray-600 mb-6">Counseling Psychologist</p>
-              <a href="https://forms.gle/Wd8d9yyFLX6CBm836" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#2E5D8A'}}>
+              <a href="https://forms.gle/Wd8d9yyFLX6CBm836" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#3258b2'}}>
                 Book with Aishwarya
               </a>
             </div>
@@ -153,12 +153,12 @@ const Services = () => {
 
         {/* Community Links Section */}
         <div className="bg-white p-10 rounded-2xl shadow-xl">
-          <h2 className="text-4xl font-bold text-center mb-4" style={{color: '#2E5D8A'}}>Join Our Community</h2>
+          <h2 className="text-4xl font-bold text-center mb-4" style={{color: '#3258b2'}}>Join Our Community</h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Be part of something bigger and make a positive impact</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="p-8 rounded-xl shadow-lg text-center border-l-4 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
               <div className="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-xl font-bold" style={{backgroundColor: '#6495ED'}}>🤝</div>
-              <h3 className="text-2xl font-semibold mb-4" style={{color: '#2E5D8A'}}>Volunteer with Us</h3>
+              <h3 className="text-2xl font-semibold mb-4" style={{color: '#3258b2'}}>Volunteer with Us</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">Make a difference in others' lives by joining our volunteer program</p>
               <a href="https://forms.gle/LKSGuRfERib549fH9" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#6495ED'}}>
                 Apply to Volunteer
@@ -166,7 +166,7 @@ const Services = () => {
             </div>
             <div className="p-8 rounded-xl shadow-lg text-center border-l-4 hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105" style={{backgroundColor: '#F0F8FF', borderColor: '#6495ED'}}>
               <div className="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-xl font-bold" style={{backgroundColor: '#6495ED'}}>🌟</div>
-              <h3 className="text-2xl font-semibold mb-4" style={{color: '#2E5D8A'}}>Greatness Community</h3>
+              <h3 className="text-2xl font-semibold mb-4" style={{color: '#3258b2'}}>Greatness Community</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">Connect with like-minded individuals in our supportive community</p>
               <a href="https://forms.gle/wZz9a9n9Fv9JwMBM6" target="_blank" rel="noopener noreferrer" className="text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 inline-block font-semibold hover:transform hover:scale-105" style={{backgroundColor: '#6495ED'}}>
                 Join Community

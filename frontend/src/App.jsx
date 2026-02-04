@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Podcast from './pages/Podcast';
 import Courses from './pages/Courses';
+import BookAppointment from './pages/BookAppointment';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/podcast" element={<Podcast />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/book-appointment" element={<BookAppointment />} />
           </Routes>
         </main>
         <Footer />
