@@ -1,39 +1,4 @@
-import { useState } from 'react';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../config/firebase';
-
 const Services = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      await addDoc(collection(db, 'bookings'), {
-        ...formData,
-        createdAt: new Date(),
-        status: 'pending'
-      });
-      alert('Booking request submitted successfully!');
-      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-    } catch (error) {
-      alert('Error submitting booking. Please try again.');
-    }
-    
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   return (
     <div className="py-16 bg-white">

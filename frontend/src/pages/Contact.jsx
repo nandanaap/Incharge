@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../config/firebase';
 
 const Contact = () => {
   const [contactForm, setContactForm] = useState({
@@ -35,57 +33,36 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
-      await addDoc(collection(db, 'contacts'), {
-        ...contactForm,
-        type: 'general',
-        createdAt: new Date()
-      });
+    // Simulate form submission
+    setTimeout(() => {
       alert('Message sent successfully!');
       setContactForm({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
-      alert('Error sending message. Please try again.');
-    }
-    
-    setIsSubmitting(false);
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   const handlePartnerSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
-      await addDoc(collection(db, 'partnerships'), {
-        ...partnerForm,
-        createdAt: new Date(),
-        status: 'pending'
-      });
+    // Simulate form submission
+    setTimeout(() => {
       alert('Partnership application submitted successfully!');
       setPartnerForm({ organization: '', contactName: '', email: '', phone: '', partnershipType: '', description: '' });
-    } catch (error) {
-      alert('Error submitting application. Please try again.');
-    }
-    
-    setIsSubmitting(false);
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   const handleVolunteerSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
-      await addDoc(collection(db, 'volunteers'), {
-        ...volunteerForm,
-        createdAt: new Date(),
-        status: 'pending'
-      });
+    // Simulate form submission
+    setTimeout(() => {
       alert('Volunteer application submitted successfully!');
       setVolunteerForm({ name: '', email: '', phone: '', experience: '', availability: '', motivation: '' });
-    } catch (error) {
-      alert('Error submitting application. Please try again.');
-    }
-    
-    setIsSubmitting(false);
+      setIsSubmitting(false);
+    }, 1000);
   };
 
   return (
