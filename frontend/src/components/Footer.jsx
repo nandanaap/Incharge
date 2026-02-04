@@ -31,14 +31,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div className="text-right">
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link to="/podcast" className="text-gray-300 hover:text-white">Podcast</Link></li>
-              <li><Link to="/courses" className="text-gray-300 hover:text-white">Courses</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
-            </ul>
-          </div>
+          
           
         
         </div>
