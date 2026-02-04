@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-10"></div>
+    <footer className="text-white relative overflow-hidden" style={{background: 'linear-gradient(135deg, #3258b2 0%, #1a1a1a 100%)'}}>
+      <div className="absolute inset-0 opacity-10"></div>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">

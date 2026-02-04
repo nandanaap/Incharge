@@ -142,37 +142,113 @@ const Home = () => {
       {/* Brand Video */}
       <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#3258b2'}}>Our Story</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8" style={{color: '#3258b2'}}>What We Believe In</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '300px'}}>
+            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '400px'}}>
               <video 
                 className="w-full h-full object-cover cursor-pointer"
                 controls
-                style={{height: '300px'}} 
+                style={{height: '400px'}} 
               >
                 <source src="/Left.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '300px'}}>
+            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '400px'}}>
               <video 
                 className="w-full h-full object-cover cursor-pointer"
                 controls
-                style={{height: '300px'}}
+                style={{height: '400px'}}
               >
                 <source src="/Middle.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '300px'}}>
+            <div className="video-container relative rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:transform hover:scale-105 transition-all duration-300" style={{height: '400px'}}>
               <video 
                 className="w-full h-full object-cover cursor-pointer"
                 controls
-                style={{height: '300px'}}
+                style={{height: '400px'}}
               >
                 <source src="/Right.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* client reviews  */}
+      <section className="py-16 relative overflow-hidden" style={{backgroundColor: '#26619c'}}>
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full"></div>
+          <div className="absolute bottom-20 right-20 w-24 h-24 bg-white rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white rounded-full"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Let's See Our Client's Reviews</h2>
+            <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <div className="group relative h-96">
+              <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-200 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    S
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold text-gray-900 text-lg">Saol</h4>
+                  </div>
+                </div>
+                <div className="text-6xl text-blue-500 opacity-20 mb-4 leading-none">"</div>
+                <p className="text-gray-700 leading-relaxed text-base italic mb-6 flex-grow">
+                  I highly recommend Dr. Feeba John. She was like magic, flipping the coin and changing my pain to power. Just like that. I am grateful to find her.
+                </p>
+                <div className="border-t border-gray-200 pt-4 mt-auto">
+                  <span className="text-sm text-gray-500">Verified Client</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative h-96">
+              <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-200 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    S
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold text-gray-900 text-lg">Swapna Vidhate</h4>
+                  </div>
+                </div>
+                <div className="text-6xl text-blue-500 opacity-20 mb-4 leading-none">"</div>
+                <p className="text-gray-700 leading-relaxed text-base italic mb-6 flex-grow">
+                  Feeba counselled me through our corporate counselling program, it was a nice experience. She's easy to talk to and I felt good to take some weight off my chest. I would definitely recommend her.
+                </p>
+               
+              </div>
+            </div>
+
+            <div className="group relative h-96">
+              <div className="absolute -inset-1 bg-gradient-to-r from-white to-gray-200 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    K
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold text-gray-900 text-lg">Kaushalendra Sharma</h4>
+                  </div>
+                </div>
+                <div className="text-6xl text-blue-500 opacity-20 mb-4 leading-none">"</div>
+                <p className="text-gray-700 leading-relaxed text-base italic mb-6 flex-grow">
+                  It's an experience I can't recommend highly enough. From personal issues to future aspirations, relationships, and maintaining focus amidst external distractions, she provided invaluable support and insight every step of the way.
+                </p>
+               
+              </div>
             </div>
           </div>
         </div>
@@ -189,7 +265,7 @@ const Home = () => {
                 <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center hover:transform hover:scale-105 transition-all duration-300">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4" style={{color: '#3258b2'}}>Partnerships</h3>
                   <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">Collaborate with us</p>
-                  <button className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 w-full sm:w-auto" style={{backgroundColor: '#3258b2'}} onMouseOver={(e) => e.target.style.backgroundColor = '#6495ED'} onMouseOut={(e) => e.target.style.backgroundColor = '#3258b2'}>Partner With Us</button>
+                  <a href="mailto:info@incharge.com?subject=Partnership Inquiry&body=Hi, I would like to partner with you." className="text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 font-semibold hover:transform hover:scale-105 w-full sm:w-auto inline-block" style={{backgroundColor: '#022d36'}} onMouseOver={(e) => e.target.style.backgroundColor = '#044a56'} onMouseOut={(e) => e.target.style.backgroundColor = '#022d36'}>Partner With Us</a>
                 </div>
               </div>
             </div>
@@ -217,50 +293,7 @@ const Home = () => {
       </section>
        
 
-      {/* Google Reviews */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12" style={{color: '#3258b2'}}>What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            <div className="p-4 sm:p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[250px] sm:min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-xl">⭐️</span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-3 sm:mb-4 italic leading-relaxed flex-grow text-sm sm:text-base">"I highly recommend Dr.Feeba. She is one of the strong minded people I have ever known. Her positive outlook towards life and ability to guide you through difficult situations making you understand your own self in a way is spectacular."</p>
-              <div className="border-t pt-3 sm:pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
-                <p className="font-semibold text-sm sm:text-base" style={{color: '#1E90FF'}}>Aditi Mane</p>
-                <p className="text-gray-500 text-xs sm:text-sm">· a year ago</p>
-              </div>
-            </div>
-            <div className="p-4 sm:p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[250px] sm:min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
-              <div className="flex mb-3 sm:mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg sm:text-xl">⭐️</span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-3 sm:mb-4 italic leading-relaxed flex-grow text-sm sm:text-base">"I highly recommend Dr. Freeba John. She was like magic, flipping the coin and changing my pain to power. Just like that. I am grateful to find her."</p>
-              <div className="border-t pt-3 sm:pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
-                <p className="font-semibold text-sm sm:text-base" style={{color: '#1E90FF'}}>Saolee</p>
-                <p className="text-gray-500 text-xs sm:text-sm">· a year ago</p>
-              </div>
-            </div>
-            <div className="p-4 sm:p-6 rounded-lg border-l-4 shadow-md hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full min-h-[250px] sm:min-h-[300px]" style={{backgroundColor: '#F0F8FF', borderColor: '#1E90FF'}}>
-              <div className="flex mb-3 sm:mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg sm:text-xl">⭐️</span>
-                ))}
-              </div>
-              <p className="text-gray-700 mb-3 sm:mb-4 italic leading-relaxed flex-grow text-sm sm:text-base">"It's an experience I can't recommend highly enough. From personal issues to future aspirations, relationships, and maintaining focus amidst external distractions, she provided invaluable support and insight every step of the way."</p>
-              <div className="border-t pt-3 sm:pt-4 mt-auto" style={{borderColor: '#6495ED'}}>
-                <p className="font-semibold text-sm sm:text-base" style={{color: '#1E90FF'}}>Kaushalendra Sharma</p>
-                <p className="text-gray-500 text-xs sm:text-sm">· a year ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </div>
   );
 };
