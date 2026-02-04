@@ -191,7 +191,7 @@ const About = () => {
           {/* Team Members - Bottom Row */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {[
-              { name: "Arzoo Bhagchandan", role: "Clinical Psychologist", image: "/char2.png" },
+              { name: "Arzoo Bhagchandani", role: "Clinical Psychologist", image: "/char2.png" },
               { name: "Aishwarya Iyer", role: "Counseling Psychologist", image: "/char3.png" },
               { name: "Rachel Bhopale", role: "Community and Engagement Manager", image: "/char4.png" },
               { name: "Moksha Sherwani", role: "Operations Manager Clinical Team", image: "/char5.png" }
